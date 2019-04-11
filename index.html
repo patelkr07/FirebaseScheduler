@@ -18,6 +18,7 @@
     <body>
 
         <div class="container">
+
             <div class="jumbotron" style="background-color: rgb(139, 0, 0); color: white">
                 <h1 class="text-center">Car Rides to...</h1>
                 <h3 class="text-center">Schedule of car rides to...</h3>            
@@ -26,22 +27,27 @@
             <div class="row">
 
                 <div class="col-md-12">
-                    <div class="card-header">All available ride times</div>
-                    <div class="card-body">
-                        <table class="table table-sm table-hover" id="rides-table">
-                            <thead>
-                                <tr>
-                                    <th scope="col">Name of Vessel</th>
-                                    <th scope="col">Destination</th>
-                                    <th scope="col">Frequency (min)</th>
-                                    <th scope="col">Next Arrival (min)</th>
-                                    <th scope="col">Next Vessel Arrival</th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                             </tbody>
-                        </table>
+
+                    <div class="card mb-4">
+                        <div class="card-header">All available ride times</div>
+                        <div class="card-body">
+                            <table class="table table-sm table-hover" id='rides-table'>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">Name of Vessel</th>
+                                        <th scope="col">Destination</th>
+                                        <th scope="col">Frequency (min)</th>
+                                        <th scope="col">Next Arrival (min)</th>
+                                        <th scope="col">Empty for Now</th>
+                                        <th scope="col">Empty</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                </tbody>
+                            </table>
+                        </div>
                     </div>
+                </div>
             </div>
 
             <div class="row">
@@ -53,28 +59,26 @@
                             <form>
                                 <div class="form-group">
                                     <label for="vessel-input">Name of Vessel</label>
-                                    <input class="form-control" id="employee-name-input" placeholder="Jane Doe" type="text">
+                                    <input class="form-control" id="vessel-input" placeholder="Jane Doe" type="text">
                                 </div>
+                                <div class="form-group">
+                                    <label for="destination-input">Destination</label>
+                                    <input class="form-control" id="destination-input" placeholder="Jane Doe" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="frequency-input">Frequency</label>
+                                    <input class="form-control" id="frequency-input" placeholder="Jane Doe" type="text">
+                                </div>
+                                <div class="form-group">
+                                    <label for="next-arrival-input">Next Arrival</label>
+                                    <input class="form-control" id="next-arrival-input" placeholder="Jane Doe" type="text">
+                                </div>
+                                <button class="btn btn-primary float-right" id="add-vessel-btn">Submit</button>
                             </form>
                         </div>
                     </div>
                 </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+            </div>
 
 
 
