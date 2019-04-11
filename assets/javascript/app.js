@@ -20,6 +20,8 @@ var database = firebase.database();
         var dest = $("#destination-input").val().trim();
         var freq = $("#frequency-input").val().trim();
         var nextArrival = ($("#next-arrival-input").val().trim());
+        //frequency and next arrival should be in moment.js value, not text
+    
     
     var newVess = {
         vessel: vesselName,
@@ -76,3 +78,6 @@ console.log(config);
 
 console.log(database);
 
+//function for calculating next train should go here
+//time values should be in moment.JS format but I couldn't get it to work
+//also function for deleting row and then pushing to last column of table
