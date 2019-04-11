@@ -19,7 +19,7 @@ var database = firebase.database();
         var vesselName = $("#vessel-input").val().trim();
         var dest = $("#destination-input").val().trim();
         var freq = $("#frequency-input").val().trim();
-        var nextArrival = moment($("#next-arrival-input").val().trim(), "hh:mm a").format("X");
+        var nextArrival = ($("#next-arrival-input").val().trim());
     
     var newVess = {
         vessel: vesselName,
@@ -35,7 +35,7 @@ var database = firebase.database();
     console.log(newVess.frequency);
     console.log(newVess.arrival);
 
-    alert("You've added a vessel");
+    alert("You've added a driver");
 
     $("#vessel-input").val("");
     $("#destination-input").val("");
